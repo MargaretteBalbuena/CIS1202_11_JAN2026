@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CIS1102 Final Portfolio</title>
+
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:#0b0014;
+    color:#eee;
+    overflow-x:hidden;
+}
+
+
+.bubble{
+    position:fixed;
+    bottom:-100px;
+    background:rgba(186,85,211,0.25);
+    border-radius:50%;
+    animation:rise 20s infinite linear;
+    z-index:-1;
+}
+@keyframes rise{
+    from{transform:translateY(0);opacity:.7;}
+    to{transform:translateY(-120vh);opacity:0;}
+}
+
+header{
+    background:linear-gradient(135deg,#7b2cbf,#000);
+    padding:60px;
+    text-align:center;
+}
+
+.profile{
+    width:90%;
+    margin:40px auto;
+    background:#1a002b;
+    padding:30px;
+    border-radius:20px;
+    display:flex;
+    gap:30px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.profile img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    border:5px solid #b517ff;
+    object-fit:cover;
+}
+
+.lesson-nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    margin:30px auto;
+}
+
+.lesson-nav button{
+    background:#7b2cbf;
+    color:white;
+    border:none;
+    padding:10px 16px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.slider-container{
+    width:95%;
+    margin:40px auto;
+    position:relative;
+    overflow:hidden;
+}
+
+.slider{
+    display:flex;
+    transition:.6s ease;
+}
+
+.slide{
+    min-width:520px;
+    background:#1a002b;
+    padding:25px;
+    margin-right:30px;
+    border-radius:20px;
+}
+
+.slide img{
+    width:100%;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+.nav{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:#9d4edd;
+    border:none;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.prev{left:-15px;}
+.next{right:-15px;}
+
+.contact{
+    width:90%;
+    margin:50px auto;
+    background:#1a002b;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+}
+
+footer{
+    background:#7b2cbf;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+
+<div class="bubble" style="left:10%;width:40px;height:40px;"></div>
+<div class="bubble" style="left:40%;width:70px;height:70px;"></div>
+<div class="bubble" style="left:70%;width:50px;height:50px;"></div>
+
+<header>
+    <h1>My Portfolio</h1>
+    <p>CIS1102 Final Project</p>
+</header>
+
+<section class="profile">
+    <img src="pfp.jpg" alt="My Photo">
+    <div>
+        <h2>About Me</h2>
+        <p>
+            I am Margarette Christel M. Balbuena, a 20-year-old student at the University of San Carlos. I have a passion for exploring creativity in both technology and everyday life. In my free time, I enjoy listening to diverse music that inspires me, watching movies that spark my imagination, and discovering new food spots that fuel my curiosity.
+
+This portfolio is a showcase of my learning journey and creative projects. Here, you can explore the 14 lessons I have worked on, from understanding fundamental concepts in information systems and computer science, to hands-on programming exercises in HTML, CSS, and more. Each lesson highlights not only the knowledge I have gained but also the practical ways I have applied it.
+
+Through this website, I aim to share my experiences, demonstrate my skills, and provide a glimpse into my personal and academic growth. Whether it’s interactive examples, story-driven lessons, or creative mini-projects, this portfolio reflects my dedication to learning and my excitement for exploring the world of technology.
+        </p>
+    </div>
+</section>
+
+<section class="lesson-nav">
+    <button onclick="go(0)">Lesson 1</button>
+    <button onclick="go(1)">Lesson 2</button>
+    <button onclick="go(2)">Lesson 3</button>
+    <button onclick="go(3)">Lesson 4</button>
+    <button onclick="go(4)">Lesson 5</button>
+    <button onclick="go(5)">Lesson 6</button>
+    <button onclick="go(6)">Lesson 7</button>
+    <button onclick="go(7)">Lesson 8</button>
+    <button onclick="go(8)">Lesson 9</button>
+    <button onclick="go(9)">Lesson 10</button>
+    <button onclick="go(10)">Lesson 11</button>
+    <button onclick="go(11)">Lesson 12</button>
+    <button onclick="go(12)">Lesson 13</button>
+    <button onclick="go(13)">Lesson 14</button>
+</section>
+
+<div class="slider-container">
+<button class="nav prev" onclick="prev()">❮</button>
+
+<div class="slider">
+
+
+<div class="slide">
+<h3>Lesson 1: Data, Information, and Knowledge</h3>
+<img src="1.png" 
+<p>Data, information, and knowledge are interconnected concepts in information systems. Data refers to raw, unprocessed facts, while information is data that has been processed and given meaning. Knowledge is derived from analyzing information and gaining understanding or insights. For example, temperature readings (data) can be processed to show an average temperature (information), which can then guide decisions about planting crops (knowledge).</p>
+</div>
+
+<div class="slide">
+<h3>Lesson 2: Areas of Computer Science</h3>
+<img src="2.png">
+<p>Computer Science is a broad discipline with areas such as Artificial Intelligence, Software Engineering, Cybersecurity, Networks, Databases, and Human-Computer Interaction. Each area contributes to technology and society in different ways, improving efficiency, security, and usability. AI focuses on machine learning and intelligent systems, Software Engineering emphasizes coding and software design, and Networking involves understanding protocols and data transmission.</p>
+</div>
+
+<div class="slide">
+<h3>Lesson 3: Uses of Computer Systems</h3>
+<p>
+Every morning, Mia, a young nurse in a busy city hospital, starts her day by logging into the hospital’s computer system. The moment she types in her credentials, the screen displays all her patients for the day, complete with their medical history, allergies, and ongoing treatments. Instead of flipping through thick folders or searching for missing charts, all the information she needs appears instantly. As she walks from room to room, she carries a small tablet that automatically updates every time she enters new observations, allowing doctors in other departments to see real-time changes without calling her. Meanwhile, the lab team uses automated machines connected to the hospital network to analyze blood samples, and the results appear on Mia’s tablet seconds later. Even Mia’s friend in the billing section relies on computers to process payments accurately and fast. Throughout the day, cybersecurity systems silently work in the background, keeping patient information safe from hackers and making sure the hospital runs smoothly. By the end of her shift, Mia realizes how computers helped her save time, avoid mistakes, and focus more on comforting and caring for her patients rather than drowning in paperwork. Through her experience, she learns that technology isn’t just about machines—it’s about helping people work smarter, serve others better, and create a safer environment for those who need help the most.
+
+</p>
+<p><strong>Moral:</strong> Technology with compassion improves lives.</p>
+</div>
+
+<div class="slide">
+<h3>Lesson 4: Algorithms & Flowcharts</h3>
+<img src="6.png">
+
+<p>Algorithms provide step-by-step solutions to problems, and tools like pseudocode and flowcharts aid programmers in designing and visualizing these solutions. Pseudocode is a text-based representation of logic, while flowcharts use diagrams to illustrate processes, making complex algorithms easier to understand.</p>
+</div>
+
+
+<div class="slide">
+
+<h3>Lesson 5: Number Systems</h3>
+<img src="3.png">
+<p>Number systems, such as binary, decimal, and hexadecimal, are essential in computing. Converting between these systems allows humans and computers to communicate efficiently. Binary is particularly important because computers operate using two states, represented as 0s and 1s.</p>
+</div>
+
+
+<div class="slide">
+
+<h3>Lesson 6: Software Types</h3>
+<img src="4.png">
+<p>Software can be classified as general-purpose or specific-purpose. General-purpose software, such as Microsoft Word or Excel, caters to a broad range of tasks, while specific-purpose software, like AutoCAD or QuickBooks, is designed for particular applications. Both types of software address different user needs.</p>
+</div>
+
+
+<div class="slide">
+
+<h3>Lesson 7: Computer Hardware</h3>
+
+<p>Computer hardware operates through the Input-Process-Output-Storage (IPOS) cycle. Input devices like keyboards and mice capture data, the CPU processes it, output devices display results, and storage components save data for future use. Internal components such as RAM, CPU, and motherboard support processing, while external devices like printers and monitors facilitate interaction.</p>
+</div>
+
+
+<div class="slide">
+
+<h3>Lesson 8: Utility Software</h3>
+<img src="5.png">
+<p>Utility software helps maintain and secure computer systems. Antivirus programs protect against malware, backup software ensures data recovery, file compression tools save storage space, and productivity applications enhance workflow. These utilities collectively support system performance, security, and efficiency.</p>
+</div>
+
+<div class="slide">
+
+<h3>Lesson 9: Databases</h3>
+<img src="7.png">
+<p>Databases store structured data in tables composed of rows and columns, allowing efficient organization and retrieval. Unlike traditional file storage, databases reduce redundancy, improve data integrity, and support multiple users simultaneously, making them essential for modern data management.</p>
+</div>
+
+
+<div class="slide">
+
+<h3>Lesson 10: Computer Networks</h3>
+<img src="8.png">
+<p>Computer networks connect devices to share resources and information. Topologies like star, bus, ring, and mesh define network structure, while LANs, WANs, and MANs vary in scope. Networking tools such as routers, switches, cables, and firewalls enable communication, security, and management across systems.</p>
+</div>
+
+<div class="slide">
+
+<h3>Lesson 11: Ethics & Security</h3>
+<img src="9.png">
+<p>Ethics, security, and privacy are critical in IT. Ethical concerns include hacking, piracy, and data misuse. Security measures protect sensitive information, while privacy ensures responsible handling of personal data. The IT Code of Ethics provides guidance for professional and responsible conduct in technology use.</p>
+</div>
+
+
+<div class="slide">
+<h3>Lesson 12: HTML Programming</h3>
+
+<p>HTML is used to structure web content using tags such as h1 for headings, p for paragraphs, a for links, and img for images.</p>
+
+</div>
+
+
+<div class="slide">
+<h3>Lesson 13: CSS Programming</h3>
+
+<p>CSS enhances HTML by controlling styles like color, layout, and fonts. With syntax in the form of selectors and property-value pairs, CSS improves the look, feel, and usability of web pages.</p>
+</div>
+
+
+<div class="slide">
+
+<h3>Lesson 14: Future of Computing</h3>
+<p>
+In the year 2045, technology had become part of everyday life. Generative AI was no longer just a tool that analyzed data—it could create stories, images, music, and even personalized lesson plans. Unlike traditional AI, which only followed rules and patterns, Generative AI could imagine new ideas and produce original content.
+Mika, a college student, started her day with the help of her AI assistant. The system used data analytics to study her habits—what time she woke up, which subjects she struggled with, and how she learned best. Based on this data, the AI created a custom study schedule and suggested review materials, helping Mika learn faster and more efficiently.
+Outside of school, data analytics was transforming many industries. Hospitals used it to predict diseases early, businesses used it to understand customer needs, and cities used it to reduce traffic and save energy. Everything became smarter because data was collected, analyzed, and used to make better decisions.
+However, not everything felt perfect. Mika began to worry about ethical issues. The AI knew a lot about her personal life. Who owned this data? What if the system was biased or made unfair decisions? Some of her friends lost jobs because AI systems replaced human workers.
+One day, Mika’s professor reminded the class that technology must be used responsibly. Generative AI and data analytics should help people—not control them. Rules about privacy, fairness, and transparency were needed to protect society.
+By the end of the day, Mika realized that the future of computing was powerful and helpful, but it also required human values. When used ethically, Generative AI and data analytics could improve lives while respecting people’s rights and dignity.
+</p>
+</div>
+
+</div>
+
+<button class="nav next" onclick="next()">❯</button>
+</div>
+
+<section class="contact">
+<h2>Contact Me</h2>
+<p>Email: <strong>margarettechristelbalbuena@gmail.com</strong></p>
+</section>
+
+<footer>
+© 2025 | Margarette Christel M. Balbuena
+</footer>
+
+<script>
+let index=0;
+function next(){
+ index++;
+ document.querySelector(".slider").style.transform=`translateX(${-550*index}px)`;
+}
+function prev(){
+ if(index>0) index--;
+ document.querySelector(".slider").style.transform=`translateX(${-550*index}px)`;
+}
+function go(n){
+ index=n;
+ document.querySelector(".slider").style.transform=`translateX(${-550*index}px)`;
+}
+</script>
+
+</body>
+</html>
