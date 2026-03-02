@@ -4,193 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Margarette Balbuena | Portfolio</title>
-<meta name="description" content="Margarette Balbuena — Information Technology student at University of San Carlos. Portfolio showcasing web projects, skills, and contact information.">
-<meta name="keywords" content="Margarette Balbuena, Information Technology, web development, portfolio, HTML, CSS, JavaScript">
-<link rel="canonical" href="https://example.com/"/> <!-- replace with real URL when available -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-
-<style>
-:root {
-  --bg: #f5f5f7;
-  --text: #111111;
-  --accent: #6c63ff;
-  --card: #ffffff;
-  --muted: #666666;
-}
-
-body {
-  margin: 0;
-  font-family: 'Inter', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 80px;
-}
-
-/* branding container */
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.brand a {
-  color: var(--text);
-  text-decoration: none;
-  font-weight: 800;
-  font-size: 20px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-  padding: 0;
-  margin: 0;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--text);
-  font-weight: 600;
-}
-
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 80px;
-  gap: 40px;
-}
-
-.hero-text h2 {
-  font-size: 56px;
-  margin: 0 0 20px 0;
-}
-
-.hero-text p {
-  font-size: 18px;
-  color: var(--muted);
-  max-width: 500px;
-}
-
-.hero img {
-  width: 320px;
-  height: 320px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.primary-btn {
-  margin-top: 25px;
-  padding: 14px 28px;
-  border: none;
-  background: var(--accent);
-  color: white;
-  border-radius: 30px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-section {
-  padding: 80px;
-}
-
-.section-title {
-  font-size: 36px;
-  margin-bottom: 40px;
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-}
-
-.project-card {
-  background: var(--card);
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-}
-
-.project-card h3 {
-  margin-top: 0;
-}
-
-.project-figure {
-  margin: 0 0 15px 0;
-  border-radius: 12px;
-  overflow: hidden;
-  background: #efefef;
-}
-.project-figure img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  display: block;
-}
-
-.tab-buttons {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 25px;
-}
-
-.tab-buttons button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  background: var(--accent);
-  color: white;
-  cursor: pointer;
-}
-
-#soft-skills {
-  display: none;
-}
-
-footer {
-  padding: 50px;
-  text-align: center;
-  background: var(--card);
-}
-
-footer address { 
-  font-style: normal;
-  margin-bottom: 10px;
-}
-
-.dark-mode {
-  --bg: #111111;
-  --text: #ffffff;
-  --card: #1c1c1c;
-  --muted: #aaaaaa;
-}
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-  header {
-    flex-direction: column;
-    gap: 20px;
-  }
-}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-  <div class="brand">
-    <a href="#top" aria-label="Go to top"><strong>Margarette Balbuena</strong></a>
-  </div>
-
+  <a href="#top"><strong>Margarette Balbuena</strong></a>
   <nav>
     <ul>
       <li><a href="#about">About</a></li>
@@ -200,128 +19,116 @@ footer address {
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  <button onclick="toggleDark()" aria-pressed="false">Dark Mode</button>
+  <button onclick="toggleDarkMode()">Dark Mode</button>
 </header>
 
-<section class="hero" id="top">
+<section id="top">
   <div class="hero-text">
-    <h2>Hi, I’m Margarette Balbuena</h2>
+    <h2>Portfolio</h2>
     <p>
       Hi, I’m Margarette Christel M. Balbuena, an Information
-       Technology student at the University of San Carlos with a 
-       passion for creating meaningful digital experiences. I’m focused on honing my web development skills—HTML, CSS, 
-         and beyond—while applying creativity and attention to detail 
-         to every project I work on.
+      Technology student at the University of San Carlos with a 
+      passion for creating meaningful digital experiences. I’m focused on honing my web development skills—HTML, CSS, 
+      and beyond—while applying creativity and attention to detail 
+      to every project I work on.
     </p>
-    <a class="primary-btn" href="../Portfolio_CIS1102/ITC_FinalProject.html">View My Work</a>
   </div>
-  <img src="pfp.jpeg" alt="Portrait of Margarette Balbuena">
+  <div class="hero-image">
+    <img src="pfp.jpeg" alt="Portrait of Margarette Balbuena" class="profile-pic">
+  </div>
 </section>
 
 <section id="about">
-  <h2 class="section-title">About Me</h2>
+  <h2>About Me</h2>
   <p>
-    I’m a motivated IT student who loves creating web experiences that are both functional and visually appealing. I thrive on problem-solving and enjoy tackling challenges that require logical thinking and creativity. Through my academic journey and hands-on projects, I’ve learned to plan carefully, collaborate effectively, and execute ideas from concept to reality. I’m continuously learning, exploring new technologies, and looking for ways to apply my skills to real-world projects that make an impact.
+    I’m a BS Information Technology student at the University of San 
+    Carlos with a passion for building meaningful digital solutions. 
+    My current focus is web development and data analysis, 
+    and I enjoy turning ideas into practical projects that
+     solve problems or improve experiences. While I’m still 
+     early in my career, I’ve worked on academic and personal 
+     projects that help me develop my coding, analytical, and 
+     problem-solving skills. I’m curious, motivated, and eager
+      to learn new technologies, constantly experimenting to 
+      grow my abilities. My goal is to apply what I learn to 
+      real-world projects and continue building a portfolio that 
+      demonstrates both creativity and technical skills.
   </p>
 </section>
 
 <section id="education">
-  <h2 class="section-title">Education</h2>
-  <article class="project-card" aria-labelledby="edu-title">
-    <h3 id="edu-title">University of San Carlos</h3>
-    <p>Bachelor of Science in Information Technology (Expected 2026)</p>
-    <p>Relevant coursework includes Web Development, Database Systems, and Networking Fundamentals. I participate in student projects, group assignments, and hands-on labs to apply classroom learning in practical settings.</p>
+  <h2>Education</h2>
+  <article>
+    <h3>University of San Carlos</h3>
+    <p>Bachelor of Science in Information Technology (Expected 2028)</p>
+    <p>Relevant coursework includes Web Development, Data Analysis, and Networking Fundamentals, Programming (C).</p>
   </article>
 </section>
 
 <section id="projects">
-  <h2 class="section-title">Projects</h2>
+  <h2>Projects</h2>
   <div class="projects-grid">
-    <!-- Existing finished project -->
     <div class="project-card">
-      <figure class="project-figure">
-        <a href="../Portfolio_CIS1102/ITC_FinalProject.html" aria-label="Open digital portfolio project">
-          <img src="oldport.png" alt="Screenshot of old digital portfolio">
-        </a>
-        <figcaption>Digital Portfolio — old portfolio screenshot</figcaption>
-      </figure>
+      <a href="../Portfolio_CIS1102/ITC_FinalProject.html">
+        <img src="oldport.png" alt="Screenshot of old digital portfolio">
+      </a>
       <h3>Digital Portfolio</h3>
-      <p>This is my previous digital portfolio containing lessons from my CIS 1102 class. It includes the HTML files and accompanying CSS used to build the site.</p>
-      <p><a href="../Portfolio_CIS1102/ITC_FinalProject.html" target="_blank" rel="noopener">Open project</a></p>
+      <p>This project showcases my web development skills, including HTML, CSS, and responsive design. I built this portfolio to organize and present my work, experiment with layout and styling, and practice creating clean, accessible web pages. It demonstrates my ability to plan, structure, and implement web projects independently.</p>
     </div>
-
-    
     <div class="project-card">
-      <figure class="project-figure" aria-hidden="true" style="display:flex;align-items:center;justify-content:center;height:160px;">
-        <span style="color:var(--muted);font-weight:600;">In progress</span>
-      </figure>
-      <h3>Other Projects </h3>
-
-      
-      
+      <a href="../Focus-Buddy/focusbuddy.html">
+        <img src="focusbuddyss.png" alt="Screenshot of Focus Buddy app">
+      </a>
+      <h3>Focus Buddy</h3>
+      <p>This project showcases my web development skills, including HTML, CSS, and responsive design. I built this portfolio to organize and present my work, experiment with layout and styling, and practice creating clean, accessible web pages. It demonstrates my ability to plan, structure, and implement web projects independently.</p>
     </div>
   </div>
 </section>
 
 <section id="skills">
-  <h2 class="section-title">Skills</h2>
-
-  <div class="tab-buttons">
-    <button onclick="showTech()" id="btn-tech">Technical</button>
-    <button onclick="showSoft()" id="btn-soft">Soft Skills</button>
-  </div>
-
-  <div id="tech-skills">
-    <ul>
-      <li>HTML5 & CSS3 – Creating structured, responsive, and accessible web pages using semantic HTML and modern CSS styling techniques.</li>
-      <li>Basic Web Development – Understanding of layout design, navigation systems, and responsive structure for user-friendly websites.</li>
-      <li>Version Control (Git) – Familiar with basic Git workflow including initializing repositories, branching, committing changes, and merging.</li>
-      <li>Productivity Tools – Proficient in Google Workspace and Microsoft Office for documentation, presentations, collaboration, and project organization.</li>
-    </ul>
-  </div>
-
-  <div id="soft-skills">
-    <ul>
-     Soft Skills
-
-    <li>Strong Communication – Able to clearly express ideas both verbally and in writing.</li>
-    <li>Team Collaboration – Experienced in working within academic teams and organizational groups.</li>
-    <li>Adaptability – Quick to adjust to new tools, environments, and project requirements.</li>
-    <li>Problem-Solving – Analytical thinker who approaches challenges with structured reasoning.</li>
-    <li>Creativity – Enjoys combining technical skills with visual and design-oriented thinking.</li>
-    </ul>
+  <h2>Skills</h2>
+  <div class="skills-tabs">
+    <div class="tab-buttons">
+      <button onclick="showTab('tech')">Technical</button>
+      <button onclick="showTab('soft')">Soft Skills</button>
+    </div>
+    <div id="tech-skills" class="tab-content">
+      <ul>
+        <li>Languages: C, Java, HTML, CSS</li>
+        <li>Basic Web Development – Layout design & responsive structure</li>
+        <li>Version Control (Git) – Repositories, commits, branches</li>
+        <li>Productivity Tools – Google Workspace & Microsoft Office</li>
+      </ul>
+    </div>
+    <div id="soft-skills" class="tab-content" style="display:none">
+      <ul>
+        <li>Strong Communication</li>
+        <li>Team Collaboration</li>
+        <li>Adaptability</li>
+        <li>Problem-Solving</li>
+        <li>Creativity</li>
+      </ul>
+    </div>
   </div>
 </section>
 
 <section id="contact">
-  <h2 class="section-title">Contact Me</h2>
-  <address>
-    <a href="mailto:balbuenamargarette2@gmail.com">balbuenamargarette2@gmail.com</a>
-  </address>
+  <h2>Contact Me</h2>
+  <div class="contact-form-container">
+    <p class="contact-email">balbuenamargarette2@gmail.com</p>
+    <form class="contact-form" action="mailto:balbuenamargarette2@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
 </section>
 
 <footer>
   <p>© 2026 Margarette Balbuena</p>
 </footer>
 
-<script>
-function toggleDark() {
-  const btn = document.querySelector('header button[onclick="toggleDark()"]');
-  document.body.classList.toggle("dark-mode");
-  const pressed = document.body.classList.contains("dark-mode");
-  if (btn) btn.setAttribute("aria-pressed", pressed.toString());
-}
-
-function showTech() {
-  document.getElementById("tech-skills").style.display = "block";
-  document.getElementById("soft-skills").style.display = "none";
-}
-
-function showSoft() {
-  document.getElementById("tech-skills").style.display = "none";
-  document.getElementById("soft-skills").style.display = "block";
-}
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
