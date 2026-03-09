@@ -173,6 +173,16 @@ section h2 {
   font-size: 15px;
 }
 
+/* display: none removes the element from layout so it takes up no space. */
+.is-hidden {
+  display: none;
+}
+
+/* visibility: hidden keeps layout space, but the element is not visible. */
+.is-visible {
+  display: block;
+}
+
 .contact-form-container {
   max-width: 700px; 
   margin: auto; 
