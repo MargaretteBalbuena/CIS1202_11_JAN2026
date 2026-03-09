@@ -6,10 +6,14 @@ function showTab(tab) {
   const tech = document.getElementById('tech-skills');
   const soft = document.getElementById('soft-skills');
   if(tab === 'tech') {
-    tech.style.display = 'block';
-    soft.style.display = 'none';
+    tech.classList.remove('is-hidden');
+    tech.classList.add('is-visible');
+    soft.classList.remove('is-visible');
+    soft.classList.add('is-hidden');
   } else {
-    tech.style.display = 'none';
-    soft.style.display = 'block';
+    tech.classList.remove('is-visible');
+    tech.classList.add('is-hidden');
+    soft.classList.remove('is-hidden');
+    soft.classList.add('is-visible');
   }
 }
